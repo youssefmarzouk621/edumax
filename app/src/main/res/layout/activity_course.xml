@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.CourseActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/course_detail_image"
+            android:layout_width="0dp"
+            android:layout_height="333dp"
+            android:scaleType="centerCrop"
+            android:soundEffectsEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/mesh_706" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:alpha="0.5"
+            app:layout_constraintBottom_toBottomOf="@+id/course_detail_image"
+            app:layout_constraintEnd_toEndOf="@+id/course_detail_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/background_gradient" />
+
+        <TextView
+            android:id="@+id/course_detail_title"
+            android:layout_width="282dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="TextView"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/course_detail_image"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/course_detail_mentor_image"
+            android:layout_width="55sp"
+            android:layout_height="55sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/course_detail_image"
+            app:srcCompat="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/course_detail_mentor_fullname"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Hassen Chouadah"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/course_detail_mentor_image"
+            app:layout_constraintTop_toBottomOf="@+id/course_detail_image" />
+
+        <TextView
+            android:id="@+id/course_detail_mentor_role"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="20dp"
+            android:text="Mentor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/course_detail_mentor_image"
+            app:layout_constraintTop_toBottomOf="@+id/course_detail_mentor_fullname" />
+
+        <TextView
+            android:id="@+id/course_detail_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl diam, commodo vitae ullamcorper eu, sagittis eu quam. Suspendisse non dignissim tellus. Sed sit amet justo congue, pharetra nulla quis, placerat elit. Morbi sit amet vulputate metus. Mauris scelerisque, justo mollis aliquam aliquet, magna magna gravida urna, in tempus quam dolor ornare odio. Etiam semper consequat leo, nec congue neque varius id. Fusce id ultrices sem. Integer a magna sed sem ultrices sagittis ut vehicula sapien. Aenean eros eros, commodo eu dictum et, blandit sed urna. Morbi neque sem, semper vel vulputate eu, dignissim vitae mi."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/course_detail_mentor_role" />
+
+        <ImageButton
+            android:id="@+id/fav_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="18dp"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/add_to_favorite"
+            app:layout_constraintBottom_toBottomOf="@+id/course_detail_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_favorite_border" />
+
+        <TextView
+            android:id="@+id/Startsfrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Starts from"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/course_detail_description" />
+
+        <TextView
+            android:id="@+id/course_detail_mentor_price"
+            android:layout_width="69dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:text="45"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Startsfrom" />
+
+        <Button
+            android:id="@+id/enroll_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="24dp"
+            android:text="Enroll"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/course_detail_description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
